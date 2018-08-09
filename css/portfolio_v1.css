@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color: hsl(191, 20%, 10%);
+	font-size: large;
+}
+#header {
+	background-image: url(../images/dragonfly_patronus.jpg);
+	background-position: 60% 20%;
+	border: thick black solid;
+
+	height: 1000px;
+	width: 50%;
+	margin-left: 20%;
+
+}
+#header h1 {
+	margin-top: 500px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 400%;
+
+	color: yellow;
+	text-shadow: -5px -5px 2px #000;
+	background: rgba(0,80,80,0.7);
+}
+#footer {
+	background-color: #555;
+	padding: 0px 20px 0px 20px;
+	border: thick solid black;
+	
+	margin-left: 60%;
+	margin-right: 2%;
+	position: relative;
+	right: 0;
+	top: -80px;
+	font-size: 150%;
+	text-align: right;
+}
+#footer ul {
+	list-style-type: none;
+}
+#portals {
+	display: flex;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.portal {
+	background-color: #333;
+	background-position: center;
+	border: thick black solid;
+	height: 500px;
+	margin: 5px;
+	width: calc(80% / 5);
+	
+	transition: width .4s ease-in;
+}
+.portal:hover {
+	width: 30%;
+	z-index: 99;
+}
+#fantasy-portal {
+	/*margin-top: calc(150px - 0*30px);*/
+	background-color: blue;
+	background-image: url(../images/dragonfly_patronus.jpg);
+}
+#expedition-portal {
+	/*margin-top: calc(150px - 1*30px);*/
+	background-color: black;
+	background-image: url(../images/eth_ritual.jpg)
+}
+#fan-art-portal {
+	/*margin-top: calc(150px - 2*30px);*/
+	background-color: yellow;
+	background-image: url(../images/blade_in_the_dark.jpg)
+}
+#design-portal {
+	/*margin-top: calc(150px - 3*30px);*/
+	background-color: orange;
+	background-image: url(../images/silverfrond_insignia.jpg)
+}
+#landscape-portal {
+	/*margin-top: calc(150px - 4*30px);*/
+	background-color: green;
+	background-image: url(../images/golden_gate.jpg)
+}
+#snippets-portal {
+	/*margin-top: calc(150px - 5*30px);*/
+	background-color: grey;
+	background-image: url(../images/samurai.jpg)
+}

@@ -1,0 +1,259 @@
+
+.navbar {
+	width: 100%;
+	opacity: 1;
+	background-color: rgb(0,0,10);
+	position: fixed;
+	top: 0px;
+	z-index: 999;
+	height: 120px;
+}
+
+.navbar ul
+{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 70px;
+	float: right;
+	margin-right: 5%;
+}
+
+.navbar li
+{
+	display: inline;
+	font-size: 30px;
+}
+
+.navbar li a, .dropdown-button
+{
+	color: #ddd;
+	text-decoration: none;
+	padding: 10px 15px;
+	transition: background-color 0.5s;
+	overflow: hidden;
+}
+
+.navbar li a:hover {
+	background-color: #335;
+}
+
+.dropdown:hover .dropdown-button {
+	background-color: #335;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(0,0,0,0.4);
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #533;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.navbar #title {
+	font-size: 50px;
+	color: #ddd;
+	margin-top: 50px;
+	margin-left: 10%;
+	float: left;
+	font-weight: bold;
+}
+
+.section {
+	z-index: 0;
+	top: 0px;
+	width: 90%;
+	margin-left: 5%; 
+	text-align: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	
+	padding-top: 150px;
+	padding-bottom: 150px;
+	
+}
+
+.banner {
+	position: relative;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	
+	top: -150px;
+	
+	background-color: rgba(1,1,5,0.8);
+	z-index: 1;
+}
+
+.banner a {
+	position: relative;
+	top: 20px;
+	opacity: 1.0;
+	font-size: 50px;
+	font-weight: normal;
+	color: #fff;
+	margin: 0px;
+}
+
+.tn-array {
+	padding: 10px;
+	/*
+	padding-top: 150px;
+	padding-bottom: 150px;
+	*/
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.thumbnail {
+	display: inline-block;
+	top: 0px;
+	height: 300px;
+	margin: 10px;
+	z-index: 2;
+	text-align: center;
+	border: 7px solid black;
+}
+
+.thumbnail img {
+	filter: grayscale(50%);
+	transition: opacity 0.7s;
+	opacity: 0.7;
+}
+
+.thumbnail img:hover {
+	opacity: 1;
+	filter: grayscale(0%);
+}
+
+#section-1 {
+	margin-top: 120px;
+	background-image: url("../images/backgrounds/mellas_library_bw.jpg");	
+	background-position: center;
+	background-color: rgb(180,220,250);
+
+}
+#tn-array-1 .thumbnail {
+	background-color: rgb(180, 220, 250);
+}
+
+#section-2 {
+	background-image: url("../images/backgrounds/elephant_bw.jpg");
+	background-position: 50% 20%;
+	background-color: rgb(200,50,30);
+
+}
+#tn-array-2 .thumbnail {
+	background-color: rgb(200,50,30);
+}
+
+#section-3 {
+	background-image: url("../images/backgrounds/expedition_quest_hound_bw.jpg");	
+	background-position: 50% 20%;
+	background-color: rgb(160,50,250);
+}
+#tn-array-3-1 .thumbnail {
+	background-color: rgb(160, 50, 250);
+}
+#tn-array-3-2 .thumbnail {
+	background-color: rgb(160, 50, 250);
+}
+#section-4 {
+	background-image: url("../images/backgrounds/female_knight_bw.jpg");	
+	background-position: 50% 20%;
+	background-color: rgb(250,200,100);
+}
+#tn-array-4 .thumbnail {
+	background-color: rgb(250,200,100);
+}
+
+#section-5 {
+	background-image: url("../images/backgrounds/golden_gate_bw.jpg");	
+	background-position: center;
+	background-color: rgb(200,250,150);
+}
+#tn-array-5 .thumbnail {
+	background-color: rgb(200,250,150);
+}
+
+#contact-info {
+	height: 600px;
+	width: 90%;
+	margin-left: 5%;
+	background-image: url("../images/dali-profile-pic.png");
+	background-color: rgb(0,100,200);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	background-position: 50% 50%;
+	text-align: center;
+}
+
+#footer-text {
+	margin-top: 0px;
+	text-align: center;
+	font-size: 44px;
+	color: rgb(250,250,250);
+	width: 80%;
+	margin-left: 10%;
+}
+
+#footer-icons {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.button {
+	height: 100px;
+	margin: 50px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact-me {
+	width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

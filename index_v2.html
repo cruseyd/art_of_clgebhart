@@ -1,0 +1,498 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<link href="css/portfolio_v2.css" rel="stylesheet" type="text/css">
+	<link href="css/lightbox.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/lightbox-plus-jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+</head>
+<body style="background-color: rgb(0,0,10);">
+	<div class="navbar">
+		<h2 id="title"> Art of C.L.Gebhart</h2>
+		<ul>
+			<li><a href="#selected-works"> Home </a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)"
+				   class="dropdown-button"> Gallery
+				</a>
+				<div class="dropdown-content">
+					<a href="#selected-works"> Selected Works </a>
+					<a href="#fantasy"> Fantasy and Surrealism </a>
+					<a href="#expedition"> Expedition RPG </a>
+					<a href="#creatures"> Creatures and Characters </a>
+					<a href="#people"> People and Places </a>
+				</div>
+			</li>
+			<li><a href="#contact"> Contact </a></li>
+		</ul>
+	</div>
+
+	<div class="viewer" id="main-viewer">
+		<span class="close">&times;</span>
+		<img class="viewer-content" id="main-viewer-content">
+		<div class="caption"></div>
+	</div>
+
+	<div class="section" id="section-1">
+		<div class="banner" id="banner-1">
+			<a id="selected-works">Selected Works</a>
+		</div>
+		<div class=tn-array id="tn-array-1">
+			<div class=thumbnail id="tn-1-01">
+				<a href="images/dragonfly_patronus.jpg"
+				data-lightbox="gallery-1"
+				data-title="Dragonfly Patronus">
+					<img src="images/thumbnails/dragonfly_patronus.jpg" alt="Dragonfly Patronus">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-1-02">
+				<a href="images/blade_in_the_dark.jpg"
+				data-lightbox="gallery-1"
+				data-title="A Blade in the Dark">
+					<img src="images/thumbnails/blade_in_the_dark.jpg" alt="A Blade in the Dark">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-1-03">
+				<a href="images/this_is_water.jpg"
+				data-lightbox="gallery-1"
+				data-title="This is Water">
+					<img src="images/thumbnails/this_is_water.jpg" alt="This is Water">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-1-04">
+				<a href="images/elephant.jpg"
+				data-lightbox="gallery-1"
+				data-title="Surreal Serengeti">
+					<img src="images/thumbnails/elephant.jpg" alt="Surreal Serengeti">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-1-05">
+				<a href="images/expedition_quest_hound.jpg"
+				data-lightbox="gallery-1"
+				data-title="The Hound Attacks">
+					<img src="images/thumbnails/expedition_quest_hound.jpg" alt="Hound of Tindalos">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-1-06">
+				<a href="images/eth_card_deep_one.jpg"
+				data-lightbox="gallery-1"
+				data-title="Spawn of Dagon">
+					<img src="images/thumbnails/eth_card_deep_one.jpg" alt="Deep One">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-1-07">
+				<a href="images/exeggcutor.jpg"
+				data-lightbox="gallery-1"
+				data-title="Exeggcutor">
+					<img src="images/thumbnails/exeggcutor.jpg" alt="Exeggcutor">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-1-08">
+				<a href="images/ninetails.jpg"
+				data-lightbox="gallery-1"
+				data-title="Ninetails">
+					<img src="images/thumbnails/ninetails.jpg" alt="Ninetails">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-1-09" >
+				<a href="images/expedition_quest_tutorial_1_2.jpg"
+				data-lightbox="gallery-1"
+				data-title="A Minor Spider Problem">
+					<img src="images/thumbnails/expedition_quest_tutorial_1_2.jpg" alt="Spider Shed">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section-2">
+		<div class="banner" id="banner-2">
+			<a id="fantasy">Fantasy and Surrealism</a>
+		</div>
+		<div class=tn-array id="tn-array-2">
+			<div class=thumbnail id="tn-2-01">
+				<a href="images/dragonfly_patronus.jpg"
+				data-lightbox="gallery-2"
+				data-title="Dragonfly Patronus">
+					<img src="images/thumbnails/dragonfly_patronus.jpg" alt="Dragonfly Patronus">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-2-02">
+				<a href="images/mellas_library.jpg"
+				data-lightbox="gallery-2"
+				data-title="Mella's Library">
+					<img src="images/thumbnails/mellas_library.jpg" alt="Mella's Library">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-2-03">
+				<a href="images/elephant.jpg"
+				data-lightbox="gallery-2"
+				data-title="Surreal Serengeti">
+					<img src="images/thumbnails/elephant.jpg" alt="Surreal Serengeti">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-2-04">
+				<a href="images/this_is_water.jpg"
+				data-lightbox="gallery-2"
+				data-title="This is Water">
+					<img src="images/thumbnails/this_is_water.jpg" alt="This is Water">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-2-05">
+				<a href="images/silverfrond_insignia.jpg"
+				data-lightbox="gallery-2"
+				data-title="Silverfrond Insignia">
+					<img src="images/thumbnails/silverfrond_insignia.jpg" alt="Insignia of House Silverfrond">
+				</a>
+			</div>
+			
+		</div>
+	</div>
+	<div class="section" id="section-3">
+		<div class="banner" id="banner-3">
+			<a id="expedition">Expedition</a>
+		</div>
+		<div class=tn-array id="tn-array-3-1">
+			<div class=thumbnail id="tn-3-01">
+				<a href="images/expedition_quest_hound.jpg"
+				data-lightbox="gallery-3"
+				data-title="The Hound Attacks">
+					<img src="images/thumbnails/expedition_quest_hound.jpg"
+					alt="Hound of Tindalos">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-02">
+				<a href="images/eth_ritual.jpg"
+				data-lightbox="gallery-3"
+				data-title="Eldritch Ritual">
+					<img src="images/thumbnails/eth_ritual.jpg" alt="Eldritch Ritual">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-03">
+				<a href="images/eth_cathedral.jpg"
+				data-lightbox="gallery-3"
+				data-title="The Nightgaunt">
+					<img src="images/thumbnails/eth_cathedral.jpg" alt="Nightgaunt">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-04">
+				<a href="images/eth_cthulhi.jpg"
+				data-lightbox="gallery-3"
+				data-title="Summoning of Cthulhi">
+					<img src="images/thumbnails/eth_cthulhi.jpg" alt="Summoning of Cthulhi">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-05">
+				<a href="images/eth_secrets.jpg"
+				data-lightbox="gallery-3"
+				data-title="Secrets of the Past">
+					<img src="images/thumbnails/eth_secrets.jpg" alt="Secrets of the Past">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-06">
+				<a href="images/expedition_quest_malaise.jpg"
+				data-lightbox="gallery-3"
+				data-title="Mistress Malaise">
+					<img src="images/thumbnails/expedition_quest_malaise.jpg" alt="Mistress Malaise">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-07">
+				<a href="images/expedition_quest_dungeon.jpg"
+				data-lightbox="gallery-3"
+				data-title="Spring Cleaning">
+					<img src="images/thumbnails/expedition_quest_dungeon.jpg" alt="Spring Cleaning">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-08">
+				<a href="images/expedition_quest_tutorial.jpg"
+				data-lightbox="gallery-3"
+				data-title="Fae Mischief">
+					<img src="images/thumbnails/expedition_quest_tutorial.jpg" alt="Fae Mischief">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-09">
+				<a href="images/expedition_quest_tutorial_1_2.jpg"
+				data-lightbox="gallery-3"
+				data-title="A Minor Spider Problem">
+					<img src="images/thumbnails/expedition_quest_tutorial_1_2.jpg" alt="Spider Shed">
+				</a>
+			</div>
+		</div>
+		<div class=tn-array id="tn-array-3-2">
+			<div class=thumbnail id="tn-3-10">
+				<a href="images/eth_card_acolyte.jpg"
+				data-lightbox="gallery-3"
+				data-title="Eldritch Acolyte">
+					<img src="images/thumbnails/eth_card_acolyte.jpg" alt="Eldritch Acolyte">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-11">
+				<a href="images/eth_card_dhole.jpg"
+				data-lightbox="gallery-3"
+				data-title="Dhole">
+					<img src="images/thumbnails/eth_card_dhole.jpg" alt="Dhole">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-12">
+				<a href="images/eth_card_deep_one.jpg"
+				data-lightbox="gallery-3"
+				data-title="Spawn of Dagon">
+					<img src="images/thumbnails/eth_card_deep_one.jpg" alt="Spawn of Dagon">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-11">
+				<a href="images/eth_card_cthulhi.jpg"
+				data-lightbox="gallery-3"
+				data-title="Cthulhi">
+					<img src="images/thumbnails/eth_card_cthulhi.jpg" alt="Cthulhi">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-12">
+				<a href="images/eth_card_soul_eater.jpg"
+				data-lightbox="gallery-3"
+				data-title="Soul Eater">
+					<img src="images/thumbnails/eth_card_soul_eater.jpg" alt="Soul Eater">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-13">
+				<a href="images/eth_card_shoggoth.jpg"
+				data-lightbox="gallery-3"
+				data-title="Shoggoth">
+					<img src="images/thumbnails/eth_card_shoggoth.jpg" alt="Shoggoth">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-14">
+				<a href="images/eth_card_moon_beast.jpg"
+				data-lightbox="gallery-3"
+				data-title="Moon Beast">
+					<img src="images/thumbnails/eth_card_moon_beast.jpg" alt="Moon Beast">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-15">
+				<a href="images/eth_card_hound_of_tindalos.jpg"
+				data-lightbox="gallery-3"
+				data-title="Hound of Tindalos">
+					<img src="images/thumbnails/eth_card_hound_of_tindalos.jpg" alt="Hound of Tindalos">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-16">
+				<a href="images/esf_card_hardlight_hologram.jpg"
+				data-lightbox="gallery-3"
+				data-title="Hardlight Hologram">
+					<img src="images/thumbnails/esf_card_hardlight_hologram.jpg" alt="Hardlight Hologram">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-17">
+				<a href="images/esf_card_razorspine_behemoth.jpg"
+				data-lightbox="gallery-3"
+				data-title="Razorspine Behemoth">
+					<img src="images/thumbnails/esf_card_razorspine_behemoth.jpg" alt="Razorspine Behemoth">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-18">
+				<a href="images/esf_card_repulser_probe.jpg"
+				data-lightbox="gallery-3"
+				data-title="Repulser Probe">
+					<img src="images/thumbnails/esf_card_repulser_probe.jpg" alt="Repulser Probe">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-19">
+				<a href="images/esf_card_scuttler.jpg"
+				data-lightbox="gallery-3"
+				data-title="Scuttler">
+					<img src="images/thumbnails/esf_card_scuttler.jpg" alt="Scuttler">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-3-20">
+				<a href="images/esf_card_sentry.jpg"
+				data-lightbox="gallery-3"
+				data-title="Hardlight Sentry">
+					<img src="images/thumbnails/esf_card_sentry.jpg" alt="Hardlight Sentry">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section-4">
+		<div class="banner" id="banner-4">
+			<a id="creatures">Creatures and Characters</a>
+		</div>
+		<div class=tn-array id="tn-array-4">
+			<div class=thumbnail id="tn-4-01">
+				<a href="images/blade_in_the_dark.jpg"
+				data-lightbox="gallery-4"
+				data-title="Blade in the Dark">
+					<img src="images/thumbnails/blade_in_the_dark.jpg" alt="A Blade in the Dark">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-4-02">
+				<a href="images/jing_wei_vampire.jpg"
+				data-lightbox="gallery-4"
+				data-title="Jing Wei: Vampire">
+					<img src="images/thumbnails/jing_wei_vampire.jpg" alt="Jing Wei: Vampire">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-4-03">
+				<a href="images/female_knight.jpg"
+				data-lightbox="gallery-4"
+				data-title="Female Knight">
+					<img src="images/thumbnails/female_knight.jpg" alt="Female Knight">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-4-04">
+				<a href="images/ninetails.jpg"
+				data-lightbox="gallery-4"
+				data-title="Ninetails">
+					<img src="images/thumbnails/ninetails.jpg" alt="ninetails">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-4-05">
+				<a href="images/primarina.jpg"
+				data-lightbox="gallery-4"
+				data-title="Primarina">
+					<img src="images/thumbnails/primarina.jpg" alt="Primarina">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-4-06">
+				<a href="images/scyther.jpg"
+				data-lightbox="gallery-4"
+				data-title="Scyther">
+					<img src="images/thumbnails/scyther.jpg" alt="Scyther">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-4-07">
+				<a href="images/exeggcutor.jpg"
+				data-lightbox="gallery-4"
+				data-title="Exeggcutor">
+					<img src="images/thumbnails/exeggcutor.jpg" alt="Exeggcutor">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-4-08">
+				<a href="images/wisp_and_shroom.jpg"
+				data-lightbox="gallery-4"
+				data-title="Troublemakers">
+					<img src="images/thumbnails/wisp_and_shroom.jpg" alt="Troublemakers">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-4-09">
+				<a href="images/pele.jpg"
+				data-lightbox="gallery-4"
+				data-title="Pele">
+					<img src="images/thumbnails/pele.jpg" alt="Pele">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section-5">
+		<div class="banner" id="banner-5">
+			<a id="people">People and Places</a>
+		</div>
+		<div class=tn-array id="tn-array-5">
+			<div class=thumbnail id="tn-5-01">
+				<a href="images/golden_gate.jpg"
+				data-lightbox="gallery-5"
+				data-title="Golden Gate">
+					<img src="images/thumbnails/golden_gate.jpg" alt="Golden Gate">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-5-02">
+				<a href="images/samurai.jpg"
+				data-lightbox="gallery-5"
+				data-title="Portrait Study: The Samurai">
+					<img src="images/thumbnails/samurai.jpg" alt="Samurai">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-5-03">
+				<a href="images/afro_guy.jpg"
+				data-lightbox="gallery-5"
+				data-title="Portrait Study: Afro Guy">
+					<img src="images/thumbnails/afro_guy.jpg" alt="Afro Guy">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-5-04">
+				<a href="images/asian_girl.jpg"
+				data-lightbox="gallery-5"
+				data-title="Portrait Study: Asian Woman">
+					<img src="images/thumbnails/asian_girl.jpg" alt="Asian Woman">
+				</a>
+			</div>
+			<div class=thumbnail id="tn-5-05">
+				<a href="images/pale_girl.jpg"
+				data-lightbox="gallery-5"
+				data-title="Portrait Study: Pale Girl">
+					<img src="images/thumbnails/pale_girl.jpg" alt="Pale Girl">
+				</a>
+			</div>
+			<!--
+			<div class=thumbnail id="tn-5-06">
+				<a href="images/pinup_01.jpg"
+				data-lightbox="gallery-5"
+				data-title="Blue Bikini">
+					<img src="images/thumbnails/pinup_01.jpg" alt="Blue Bikini">
+				</a>
+			</div>
+			-->
+		</div>
+	</div>
+	<div class="section" id="contact-info">
+		<div class="banner" id="banner-6">
+			<a id="contact">Contact</a>
+		</div>
+		<div id="footer-text">
+			<p>Thank you for viewing my portfolio!</p>
+			<p>Drop me a follow using the links below or shoot me an email if you're interested in a commission!</p>
+			
+		</div>
+		<div id="footer-icons">
+			<a href="https://twitter.com/clgebhart?ref_src=twsrc%5Etfw"
+				class="button" id="twitter-button">
+				<img src="images/twitter-icon.png">
+			</a>
+			<a href="https://www.twitch.tv/cruseyd"
+				class="button" id="twitch-button">
+				<img src="images/twitch-icon.png">
+			</a>
+			<a onclick="emailToClipboard()" 
+				class="button" id="email-button">
+				<img src="images/email-icon.png">
+			</a>
+		</div>
+		<script type="text/javascript">
+			function emailToClipboard() {
+				const el = document.createElement('textarea');
+				el.value = "art.clgebhart@gmail.com";
+				document.body.appendChild(el);
+				el.select();
+				document.execCommand('copy');
+				alert("Oh my! You copied my email address onto your clipboard! How exciting!");
+				document.body.removeChild(el);
+			}
+		</script>
+	</div>
+
+</body>
+</html>

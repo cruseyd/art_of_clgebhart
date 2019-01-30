@@ -194,6 +194,15 @@
 	background-color: rgb(200,250,150);
 }
 
+#section-6 {
+	background-image: url("../images/backgrounds/tribal_wolf_bg.jpg");	
+	background-position: center;
+	background-color: rgb(200,200,250);
+}
+#tn-array-6 .thumbnail {
+	background-color: rgb(200,200,250);
+}
+
 #contact-info {
 	height: 600px;
 	width: 90%;

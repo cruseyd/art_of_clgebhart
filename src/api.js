@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     const filenames = fs.readdirSync('/images');
-    res.send(filenames);
+    res.send(__dirname);
 });
 
 app.use('/.netlify/functions/api', router);

@@ -1,13 +1,12 @@
 const express = require('express');
 const serverless = require('serverless-http');
-
+const fs = require('fs');
 const app = express();
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.json({
-        'hello': 'hi!'
-    });
+    const filenames = fs.readdirSync('./images');
+    res.send(filenames);
 });
 
 app.use('/.netlify/functions/api', router);
